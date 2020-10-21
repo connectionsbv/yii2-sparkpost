@@ -1,0 +1,33 @@
+{
+  "name": "connectionsbv/yii2-sparkpost",
+  "version": "0.0.1",
+  "description": "A library provides Yii2 integration with SparkPost mail service",
+  "keywords": [
+    "sparkpost",
+    "email",
+    "yii2",
+    "yii",
+    "extension",
+    "mailer"
+  ],
+  "require": {
+    "php": ">=7.0",
+    "yiisoft/yii2": "*",
+    "guzzlehttp/guzzle": "^7.1",
+    "php-http/guzzle7-adapter": "^0.1.0",
+    "sparkpost/sparkpost": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "connectionsbv\\sparkpost\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dennis van Veen",
+      "email": "dennis.vanveen@connections-it.com"
+    }
+  ],
+  "type": "library"
+}
