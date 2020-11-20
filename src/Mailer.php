@@ -51,6 +51,7 @@ class Mailer extends BaseMailer
           'options' => [
             'transactional' => $message->getTransactional(),
             'open_tracking' => $message->getTrackOpens(),
+            'click_tracking' => $message->getClickTracking(),
           ],
         ];
 

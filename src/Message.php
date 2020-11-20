@@ -20,6 +20,7 @@ class Message extends BaseMessage
     protected $attachments = [];
     protected $tag;
     protected $trackOpens = false;
+    protected $clickTracking = false;
     protected $transactional = true;
     protected $showToInHeader = true;
     protected $headers = [];
@@ -232,6 +233,17 @@ class Message extends BaseMessage
     public function setTrackOpens($trackOpens)
     {
         $this->trackOpens = $trackOpens;
+        return $this;
+    }
+
+    public function getClickTracking()
+    {
+        return $this->clickTracking;
+    }
+
+    public function setClickTracking($clickTracking)
+    {
+        $this->clickTracking = $clickTracking;
         return $this;
     }
 
